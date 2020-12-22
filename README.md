@@ -1,6 +1,9 @@
 # travisCI-build-push-docker_image
 
 integrate with TRAVIS-CI to automated build and push docker image to docker hub:
+
+https://hub.docker.com/repository/docker/thiethaa/travis-ci-build-push-docker-image
+
 1. create Dockerfile
 2. create .travis.yml file on the root directory 
 
