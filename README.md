@@ -41,4 +41,6 @@ https://hub.docker.com/repository/docker/thiethaa/travis-ci-build-push-docker-im
 
 
 
-NB: common error : cant push to docker hub ===> make sure version on the tag step and push step is match
+NB: common error : cant push to docker hub ===> 
+- make sure version on the tag step and push step is match
+- docker hub repo doesnt exis ==> create manually
