@@ -57,7 +57,7 @@
                 </configuration>
             </plugin>
         </plugins>
-        <finalName>travis-CI-build-push-docker-image</finalName>
+        <finalName>travis-ci-build-push-docker-image</finalName>
     </build>
 
 </project>
