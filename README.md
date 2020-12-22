@@ -35,3 +35,7 @@ integrate with TRAVIS-CI to automated build and push docker image to docker hub:
         DOCKER_USERNAME
         
 4. create new docker hub repo with name thiethaa/travis-ci-build-push-docker-image
+
+
+
+NB: common error : cant push to docker hub ===> make sure version on the tag step and push step is match
