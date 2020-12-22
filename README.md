@@ -7,24 +7,24 @@ integrate with TRAVIS-CI to automated build and push docker image to docker hub:
           language: java
           jdk:
             - openjdk8
-
+          
           services:
             - docker
-
+          
           # Pre-testing installs
           install:
             - echo "installed nothing....."
-
+          
           # Scripts to be run such as tests
           before_script:
             - echo "before script is nothiiiiing...."
-
+          
           script:
             - ./mvnw clean install
             - docker --version # print the version for logging
             - docker build -t travis-ci-build-push-docker-image .
-            - docker tag travis-ci-build-push-docker-image thiethaa/travis-ci-build-push-docker-image:v.1.0.0
-
+            - docker tag travis-ci-build-push-docker-image thiethaa/travis-ci-build-push-docker-image:v.1.2.3
+          
           after_success:
             - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
             - docker push thiethaa/travis-ci-build-push-docker-image:v.1.2.3
