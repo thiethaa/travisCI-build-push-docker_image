@@ -17,8 +17,10 @@ script:
   - ./mvnw clean install
   - docker --version # print the version for logging
   - docker build -t travis-ci-build-push-docker-image .
-  - docker tag travis-ci-build-push-docker-image thiethaa/travis-ci-build-push-docker-image:v.5.4.6
+  - docker tag travis-ci-build-push-docker-image thiethaa/${finalName}:${version}
+#  - docker tag travis-ci-build-push-docker-image thiethaa/travis-ci-build-push-docker-image:v.5.4.6
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push thiethaa/travis-ci-build-push-docker-image:v.5.4.6
+  - docker push thiethaa/${finalName}:${version}
+#  - docker push thiethaa/travis-ci-build-push-docker-image:v.5.4.6
