@@ -7,7 +7,7 @@ services:
 
 # Pre-testing installs
 install:
-  - echo "installed nothing....."
+  - echo "nothing to install.."
 
 # Scripts to be run such as tests
 before_script:
