@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.thiethaa</groupId>
     <artifactId>build-push-docker_image</artifactId>
-    <version>${revision}</version>
+    <version>v.1.2.3.travis</version>
     <name>build-push-docker_image</name>
     <description>Demo project for Spring Boot</description>
 
